@@ -1,0 +1,17 @@
+What You Need
+~~~~~~~~~~~~~
+1. A Pico W
+2. A Door Sensor
+
+How to get it up and running
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Flash the Pico with micropython-firmware-pico-w-******.uf2
+2. My Pico's network did not work automatically after this so I also flashed rp2-pico-w-******-version.uf2
+4. Open Thonny or other IDE
+3. Create a webhook the IFTT website.
+4. Follow the documentation for creating a post request. You will need to add in the event title and the webhook code found
+    at the top of the documentation page.
+5. Connect the Door Sensor to the Pico at pin 0 and pin 3.
+6. You must also enter you wifi ssid and password at the top of pico_door_sensor.py
+7. It should run network
+8. If you want it to run on power save the file as main.py to the Pico
